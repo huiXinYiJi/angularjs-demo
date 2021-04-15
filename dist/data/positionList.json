@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "销售",
+    "companyName": "千度",
+    "city": "上海",
+    "industry": "互联网",
+    "time": "2021-03-31 11:30",
+    "imgSrc": "https://via.placeholder.com/65"
+  },
+  {
+    "id": 2,
+    "name": "前端",
+    "companyName": "士大夫",
+    "city": "上海",
+    "industry": "互联网",
+    "time": "2021-03-31 11:30",
+    "imgSrc": "https://via.placeholder.com/65"
+  }
+]
