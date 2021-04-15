@@ -1,0 +1,36 @@
+.search-bar {
+  background-color: @headBgColor;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  .ptr(height, 40);
+  .ptr(line-height, 40);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  input {
+    .ptr(border-radius, 8);
+    background-color: @defaultColor;
+    border: none;
+    .pm(margin, 0, 10, 0, 10);
+    outline: none;
+    .pm(padding, 5, 5, 5, 5);
+    .ptr(width, 200);
+  }
+  button {
+    background-color: @headBgColor;
+    outline: none;
+    border: none;
+    &:first-child {
+      color: @defaultColor;
+    }
+    &:last-child {
+      color: @textColor;
+    }
+  }
+}
+.search-list {
+  .ptr(margin-top, 71);
+}

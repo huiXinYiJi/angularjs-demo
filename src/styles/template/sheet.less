@@ -1,0 +1,39 @@
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 99;
+  .wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    .ptr(border-radius, 4);
+    .ptr(max-height, 500);
+    overflow-y: auto;
+    li {
+      background-color: @sheetBgColor;
+      .ptr(height, 50);
+      .ptr(line-height, 50);
+      width: 100%;
+      .pm(padding, 0, 10, 0, 10);
+      text-align: center;
+      border-bottom: 1px solid @borderColor;
+      box-sizing: border-box;
+      color: @sheetDColor;
+    }
+    button {
+      background-color: @sheetBgColor;
+      .pm(margin, 8, 0, 5, 0);
+      .ptr(height, 35);
+      .ptr(line-height, 35);
+      width: 100%;
+      color: @sheetDColor;
+    }
+  }
+}

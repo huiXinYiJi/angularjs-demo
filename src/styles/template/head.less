@@ -1,0 +1,20 @@
+.head {
+  background-color: @headBgColor;
+  color: @defaultColor;
+  .ptr(padding-top, 5);
+  .ptr(padding-bottom, 5);
+  .ptr(padding-right, 5);
+  .ptr(padding-left, 5);
+  .text {
+    color: @defaultColor;
+    vertical-align: middle;
+  }
+  .custom {
+    background-color: @customBgColor;
+    border-color: @customBgColor;
+    border-style: dashed;
+    .ptr(border-radius, 4);
+    .ptr(padding-top, 4);
+    .ptr(padding-bottom, 4);
+  }
+}

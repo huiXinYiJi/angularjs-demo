@@ -1,0 +1,34 @@
+.login {
+  background-color: @headBgColor;
+  width: 100%;
+  height: 100%;
+  form {
+    .ptr(padding-top, 150);
+    width: 100%;
+    .ptr(padding-right, 40);
+    .ptr(padding-left, 40);
+    text-align: center;
+  }
+  input, button {
+    display: block;
+    margin: 0 auto;
+    .ptr(margin-bottom, 24);
+    width: 100%;
+    .pm(padding, 10, 10, 10, 10);
+    .ptr(border-radius, 5);
+  }
+  .form-item {
+    position: relative;
+  }
+  input {
+    &.ng-invalid {
+      &+span {
+        position: absolute;
+        color: @dangerColor;
+        .ptr(bottom, -20);
+        left: 0;
+        .ptr(font-size, 12);
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .ptr(height, 40);
+  .ptr(line-height, 40);
+  font-size: 0;
+  li {
+    display: inline-block;
+    .ptr(font-size, 16);
+    width: 33%;
+    text-align: center;
+    color: @textColor;
+    &.select {
+      color: @highLightColor;
+      background-color: @activeColor;
+    }
+  }
+}

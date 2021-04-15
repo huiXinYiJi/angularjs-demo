@@ -1,0 +1,123 @@
+@import 'variables.less';
+@import 'template/head.less';
+@import 'template/foot.less';
+@import 'template/headBar.less';
+@import 'template/positionList.less';
+@import 'template/positionInfo.less';
+@import 'template/company.less';
+@import 'template/tab.less';
+@import 'template/sheet.less';
+@import 'position.less';
+@import 'search.less';
+@import 'login.less';
+@import 'me.less';
+
+.ptr(@name, @px) {
+  @{name}: unit(@px / 37.5, rem);
+}
+
+.pm(@name, @top, @right, @bottom, @left) {
+  @{name}: unit(@top / 37.5, rem) unit(@right / 37.5, rem) unit(@bottom / 37.5, rem) unit(@left / 37.5, rem);
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+  }
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  .ptr(font-size, 16)
+}
+
+button {
+  outline-width: 0;
+  border: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+// 使用angular-animate
+.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+.ng-enter-active {
+  opacity:1;
+}
